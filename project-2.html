@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Smart Meal Notification — Case Study | Mohamed Anas S</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<a href="index.html#projects" class="pd-back mono">&larr; all projects</a>
+
+<header class="nav">
+  <a href="index.html#hero" class="nav-mark">MA<span>.</span></a>
+  <nav class="nav-links">
+    <a href="index.html#about">about</a>
+    <a href="index.html#journey">journey</a>
+    <a href="index.html#projects">projects</a>
+    <a href="index.html#stack">stack</a>
+    <a href="index.html#contact">contact</a>
+  </nav>
+  <a href="index.html#contact" class="nav-cta">Let's talk</a>
+</header>
+
+<section class="pd-hero">
+  <div>
+    <p class="pd-eyebrow mono">case study — 02 / 04</p>
+    <h1>Smart Meal Notification</h1>
+    <p class="pd-sub">A nutrition-tracking API built around one idea:
+    your calorie target shouldn't be static — it should adapt to what
+    you actually ate yesterday.</p>
+    <div class="pd-tags">
+      <span>Node.js</span><span>Express</span><span>MySQL</span>
+      <span>JWT · bcrypt</span><span>Nodemailer</span>
+    </div>
+    <div class="pd-actions">
+      <a href="https://github.com/SMDANAS02/A-Smart-Meal-Notification-Calorie-Overflow-Management-" target="_blank" rel="noopener" class="btn btn-primary">GitHub Repo</a>
+      <a href="index.html#contact" class="btn btn-ghost">Ask about it</a>
+    </div>
+  </div>
+  <div class="pd-visual-frame">
+    <img src="assets/visual-2.svg" alt="Calorie debt tracking visual" />
+  </div>
+</section>
+
+<section class="pd-section">
+  <span class="pd-label mono">the problem</span>
+  <h2>Fixed calorie targets don't reflect real life.</h2>
+  <p>Most nutrition trackers set one static daily target and leave it
+  there, ignoring the fact that overeating on Monday should reasonably
+  change your Tuesday. That mismatch is a big reason people abandon
+  tracking apps within weeks.</p>
+</section>
+
+<section class="pd-section">
+  <span class="pd-label mono">what I built</span>
+  <h2>A RESTful API with a "Calorie Debt" engine.</h2>
+  <ul class="pd-features">
+    <li>A normalized MySQL schema for users, meals, and progress logs,
+    designed to keep nutrition history queryable and consistent.</li>
+    <li>A Calorie Debt algorithm that dynamically recalculates each
+    day's target based on historical overages, so adherence stays
+    realistic instead of punishing.</li>
+    <li>Secure authentication using JWT and bcryptjs, with route-level
+    guards on every nutrition and progress endpoint.</li>
+    <li>Automated meal reminders and progress notifications via
+    Nodemailer, so the system nudges users instead of waiting to be
+    opened.</li>
+  </ul>
+</section>
+
+<section class="pd-section">
+  <span class="pd-label mono">why it matters</span>
+  <h2>Behavior-aware, not just data-aware.</h2>
+  <p>The interesting part of this build wasn't the CRUD — it was
+  encoding a behavioral rule (debt-adjusted targets) directly into the
+  backend logic, so the API itself nudges users toward sustainable
+  habits rather than rigid numbers.</p>
+</section>
+
+<div class="pd-nav-between mono">
+  <a href="project-1.html">← VSB-APEX</a>
+  <a href="project-3.html">Smart Volunteer Allocation →</a>
+</div>
+
+<footer class="footer mono">© 2026 Mohamed Anas S — built with GSAP &amp; too much coffee.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="pd-script.js"></script>
+</body>
+</html>
