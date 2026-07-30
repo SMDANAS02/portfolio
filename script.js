@@ -293,3 +293,24 @@ emailBtn.addEventListener('click', ()=>{
     });
   });
 })();
+
+
+/* ================= Navigation smooth scroll ================= */
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
+/* Scroll CTA button */
+const scrollCueBtn = document.querySelector('.scroll-cue');
+if (scrollCueBtn) {
+  scrollCueBtn.addEventListener('click', () => {
+    window.scrollBy({ top: window.innerHeight * 0.5, behavior: 'smooth' });
+  });
+}
